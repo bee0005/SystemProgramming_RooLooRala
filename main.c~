@@ -281,7 +281,7 @@ void *thr7SEGMENT(void* para) {
 void *thrColorLed(void* para) {
 
 
-	showcolor(0, 0, 255, 0, cledfd);
+showcolor(0, 0, 255, 0, cledfd);
 
 	while(1){
 		pthread_cond_wait(&cled_cond, &cled_mutex);
